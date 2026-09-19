@@ -1,0 +1,68 @@
+﻿================================================================================
+PROMPT STITCH V1 - CONCEPTION DU WIREFRAME INITIAL (BASSE FIDELITE)
+Apprenant : KABORE Mahamady
+Formation : D-CLIC - Developpement Web (Semaine 6 - Projet Final)
+================================================================================
+
+Role :
+Tu es un designer UX/UI senior experimente dans la conception ergonomique de sites web professionnels.
+
+Objectif :
+Generer un wireframe basse fidelite (low-fidelity, representation fonctionnelle en blocs) pour le portfolio professionnel de KABORE Mahamady, developpeur web junior.
+
+Ecrans a concevoir :
+1. Ecran d'Accueil Desktop (1200px)
+2. Ecran d'Accueil Mobile (375px)
+3. Ecran Projets Desktop & Mobile
+
+Sections obligatoires et composants :
+1. Header / Navigation :
+   - Monogramme ou Logo textuel : "KM | Mahamady Kabore"
+   - Barre de navigation : Liens vers Accueil, A propos, Competences, Projets, Contact
+   - Bouton d'appel a l'action (CTA) : "Me contacter"
+   - Version mobile : Bouton menu burger accessible
+
+2. Hero / Presentation (H1) :
+   - Titre principal valorisant : "Developpeur Web Junior specialise en HTML5, CSS3, JavaScript et Ecoconception"
+   - Paragraphe d'accroche valorisant le profil et les valeurs
+   - 2 boutons d'action : CTA principal ("Voir mes projets") et CTA secondaire ("Me contacter")
+   - Emplacement photo de profil / avatar illustre
+
+3. Section "A propos" (H2) :
+   - Presentation du parcours de formation D-CLIC
+   - Philosophie de code propre, curiosite et rigueur
+   - Liens vers telechargement CV et profils professionnels
+
+4. Section "Competences" (H2) :
+   - Grille de 4 a 6 competences cles :
+     * HTML5 semantique
+     * CSS3 moderne (Flexbox, Grid, Responsive)
+     * JavaScript (DOM, ES6+, validation)
+     * Git & GitHub (gestion de versions)
+     * Accessibilite numerique (a11y)
+     * Ecoconception web et optimisation des performances
+
+5. Section "Projets" (H2) :
+   - Grille de 3 a 4 cartes de realisations avec :
+     * Miniature / capture du projet
+     * Titre H3 du projet
+     * Description fonctionnelle
+     * Tags technologiques
+     * Liens d'action (Voir la demo, Consulter le code)
+
+6. Section "Contact" (H2) :
+   - Coordonnees directes (Email, Ville/Pays, Reseaux)
+   - Formulaire de contact fonctionnel avec :
+     * Champ Nom complet
+     * Champ Email
+     * Champ Sujet
+     * Zone de texte Message
+     * Bouton de soumission ("Envoyer le message")
+
+7. Footer :
+   - Copyright "© 2026 KABORE Mahamady - Tous droits reserves"
+   - Mention d'ecoconception web et empreinte carbone reduite
+   - Liens de navigation secondaire
+
+Style et rendu :
+Blocs filaires epures, nuances de gris, espacements coherents, hierarchie visuelle nette.

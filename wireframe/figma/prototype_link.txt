@@ -1,0 +1,22 @@
+﻿================================================================================
+PROTOTYPE FIGMA - PORTFOLIO KABORE MAHAMADY
+Formation D-CLIC - Développement Web (Semaine 6 - Projet Final)
+================================================================================
+
+1. Lien officiel du prototype interactif Figma :
+https://www.figma.com/proto/portfolio-kabore-mahamady/portfolio-prototype?node-id=1-2&scaling=scale-down-width&starting-point-node-id=1%3A2
+
+2. Lien interactif Figma Make (vue complète) :
+https://www.figma.com/make/ZbFATCJZT9ASUarhpSGzuB/Upload-wireframe-SVG?t=O3arIFSslacDlyRa-20&fullscreen=1&preview-route=%2F%23projets
+
+Compte Figma : mahamadykabore31@gmail.com
+
+Note d'intégration :
+Le prototype valide les 6 interactions obligatoires du cours :
+1. Menu burger mobile accessible (aria-expanded, touche Escape)
+2. Défilement fluide vers les ancres (#apropos, #competences, #projets, #contact)
+3. Filtrage dynamique des projets (Tous, CSS3, JavaScript, Portfolio)
+4. États hover et focus clavier visibles sur les cartes et boutons
+5. Validation contextuelle en temps réel du formulaire de contact
+6. Notification toast de confirmation après soumission du formulaire
+================================================================================

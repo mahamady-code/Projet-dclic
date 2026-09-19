@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 4 - Interaction utilisateur : inputs, événements et affichage</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Activité 5 • Exercice 4</span>
+      <h1>Interaction Utilisateur & DOM</h1>
+      <p class="subtitle">Formation D-CLIC • Formulaire d'addition, événements onclick et validation de saisie</p>
+      <nav class="nav-links">
+        <a href="../../site/projects.html" class="portfolio-link">← Portfolio</a>
+        <a href="../Exercice1/index.html">Ex 1</a>
+        <a href="../Exercice2/boucles.html">Ex 2</a>
+        <a href="../Exercice3/algos.html">Ex 3</a>
+        <a href="dom_basics.html" class="active">Ex 4</a>
+        <a href="../Exercice5/exercise1.html">Ex 5</a>
+        <a href="../Exercice6/exercise2.html">Ex 6</a>
+        <a href="../Exercice7/exercise3.html">Ex 7</a>
+        <a href="../Exercice8/calculateur.html">Ex 8</a>
+      </nav>
+    </header>
+
+    <div class="card-section">
+      <h2>Calculatrice d'Addition Simple</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">
+        Saisissez deux valeurs numériques. Cliquez sur <strong>Additionner</strong> pour effectuer la somme ou sur <strong>Réinitialiser</strong> pour vider les champs.
+      </p>
+
+      <!-- Formulaire nommé selon la consigne exacte du cours -->
+      <form name="monFormulaire" onsubmit="return false;">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="champ1">Première valeur (A) :</label>
+              <input type="text" id="champ1" name="nomDuChamp1" placeholder="Ex: 15.5">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="champ2">Deuxième valeur (B) :</label>
+              <input type="text" id="champ2" name="nomDuChamp2" placeholder="Ex: 27">
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary" onclick="additionner()">Additionner</button>
+          <button type="button" class="btn btn-outline" onclick="reinitialiser()">Réinitialiser</button>
+        </div>
+      </form>
+
+      <!-- Zone d'affichage du résultat ou de l'erreur -->
+      <div id="zoneResultat" class="result-box info">
+        Veuillez saisir deux nombres puis cliquer sur "Additionner".
+      </div>
+    </div>
+
+    <footer>
+      <a href="../Exercice3/algos.html">&larr; Exercice 3</a>
+      <span>Auteur : <strong>KABORE Mahamady</strong></span>
+      <a href="../Exercice5/exercise1.html">Passer à l'Exercice 5 &rarr;</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

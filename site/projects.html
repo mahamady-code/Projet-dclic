@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez l'ensemble des projets et réalisations web de KABORE Mahamady : intégration CSS3, développements JavaScript et conception écoconçue.">
+  <meta name="author" content="KABORE Mahamady">
+  <title>Projets &amp; Réalisations | KABORE Mahamady</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <!-- Lien d'évitement accessible -->
+  <a href="#main-content" class="skip-link">Passer au contenu principal</a>
+
+  <!-- En-tête du site -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Accueil - Portfolio KABORE Mahamady">
+        <span class="brand-badge" aria-hidden="true">KM</span>
+        <span>Mahamady KABORE</span>
+      </a>
+
+      <!-- Bouton Menu Hamburger accessible -->
+      <button id="burger-btn" class="burger-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <!-- Navigation principale -->
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="about.html" class="nav-link">À propos</a></li>
+          <li><a href="index.html#competences" class="nav-link">Compétences</a></li>
+          <li><a href="projects.html" class="nav-link active" aria-current="page">Projets</a></li>
+          <li><a href="index.html#contact" class="btn btn-primary btn-sm">Me contacter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <main id="main-content" class="section-padding">
+    <div class="container">
+      
+      <!-- En-tête de page -->
+      <div style="margin-bottom: 3rem;">
+        <span class="section-tag">Galerie Technique</span>
+        <h1>Mes Projets &amp; Réalisations</h1>
+        <p class="section-intro">
+          Chaque projet présenté ci-dessous illustre la mise en pratique concrète de compétences web clés : du respect des normes sémantiques W3C à l'interaction dynamique en JavaScript vanilla, avec une attention constante portée à l'accessibilité et à la sobriété numérique.
+        </p>
+
+        <!-- Filtres interactifs JavaScript -->
+        <div class="projects-filters" role="group" aria-label="Filtrer les réalisations par catégorie">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">Tous les projets (5)</button>
+          <button type="button" class="filter-btn" data-filter="css" aria-pressed="false">CSS3 &amp; Mise en page</button>
+          <button type="button" class="filter-btn" data-filter="js" aria-pressed="false">JavaScript &amp; Algorithmique</button>
+          <button type="button" class="filter-btn" data-filter="portfolio" aria-pressed="false">Conception &amp; Écoconception</button>
+          <button type="button" class="filter-btn" data-filter="digital" aria-pressed="false">Digital Telecom &amp; Business</button>
+        </div>
+      </div>
+
+      <!-- Grille complète des projets -->
+      <div class="projects-grid">
+        
+        <!-- PROJET 1 : Activité 4 CSS3 -->
+        <article id="proj-css" class="project-card" data-category="css">
+          <div class="project-thumb">
+            <img src="assets/images/project-css3.svg" alt="Illustration de l'Activité 4 CSS3 et Sélecteurs" width="400" height="240" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category">CSS3 &bull; Semaine 4</span>
+            <h2 class="project-title" style="font-size: 1.25rem;">Activité 4 : CSS3 &amp; Sélecteurs Avancés</h2>
+            <p class="project-summary">
+              Projet complet structuré en 3 exercices pratiques :
+              liaison externe de feuilles de style, exploitation des sélecteurs de classe, d'ID et d'attributs de début (^=) et de fin ($=).
+              Maîtrise approfondie du Box Model avec border-box et intégration d'une checklist de validation.
+            </p>
+            <div class="project-tags">
+              <span class="tag-badge">CSS3</span>
+              <span class="tag-badge">Sélecteurs d'attributs</span>
+              <span class="tag-badge">Box Model</span>
+              <span class="tag-badge">Checklist Qualité</span>
+            </div>
+            <div class="project-actions">
+              <a href="../Semaine4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Voir le projet &nearr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJET 2 : Activité 5 JavaScript -->
+        <article id="proj-js" class="project-card" data-category="js">
+          <div class="project-thumb">
+            <img src="assets/images/project-js.svg" alt="Illustration de l'Activité 5 JavaScript Fondamentaux" width="400" height="240" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category">JavaScript &bull; Semaine 5</span>
+            <h2 class="project-title" style="font-size: 1.25rem;">Activité 5 : JavaScript &amp; Interactions DOM</h2>
+            <p class="project-summary">
+              Développement d'une suite de 8 modules d'apprentissage :
+              structures conditionnelles (âge, parité, saisons), algorithmes de boucles (Fibonacci, nombres premiers, jeu secret do...while),
+              manipulation des objets String, Math et Date avec horloge numérique en direct, et calculatrice DOM.
+            </p>
+            <div class="project-tags">
+              <span class="tag-badge">Vanilla JS</span>
+              <span class="tag-badge">Algorithmes</span>
+              <span class="tag-badge">Manipulation DOM</span>
+              <span class="tag-badge">Objets JS</span>
+            </div>
+            <div class="project-actions">
+              <a href="../Semaine5/Activite5/KABORE_Mahamady_Activite5_JavaScript/Exercice1/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Voir le projet &nearr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJET 3 : Simulateur Bancaire -->
+        <article id="proj-calc" class="project-card" data-category="js">
+          <div class="project-thumb">
+            <img src="assets/images/project-calc.svg" alt="Illustration du Simulateur de Prêt Bancaire" width="400" height="240" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category">Application Web &bull; JavaScript</span>
+            <h2 class="project-title" style="font-size: 1.25rem;">Simulateur de Prêt &amp; Mensualité Bancaire</h2>
+            <p class="project-summary">
+              Mini-application financière interactive calculant la mensualité exacte et le coût total d'un crédit selon le montant, la durée et le taux.
+              Gestion du cas particulier à taux 0%, validation temps réel des entrées non numériques ou négatives.
+            </p>
+            <div class="project-tags">
+              <span class="tag-badge">JavaScript ES6</span>
+              <span class="tag-badge">Calcul financier</span>
+              <span class="tag-badge">Validation formulaire</span>
+            </div>
+            <div class="project-actions">
+              <a href="../Semaine5/Activite5/KABORE_Mahamady_Activite5_JavaScript/Exercice8/calculateur.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Voir le projet &nearr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJET 4 : Projet Final Portfolio -->
+        <article id="proj-portfolio" class="project-card" data-category="portfolio">
+          <div class="project-thumb">
+            <img src="assets/images/project-portfolio.svg" alt="Illustration du Portfolio Personnel Écoconçu" width="400" height="240" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category">Projet Final &bull; Semaine 6</span>
+            <h2 class="project-title" style="font-size: 1.25rem;">Portfolio Personnel Écoconçu &amp; Accessible</h2>
+            <p class="project-summary">
+              Synthèse globale de la formation D-CLIC : conception amont en wireframing (Stitch) et prototype Figma avec 6 interactions documentées,
+              intégration sémantique HTML5/CSS3 sans framework, formulaire accessible et démarche Qualité avec plus de 8 améliorations concrètes.
+            </p>
+            <div class="project-tags">
+              <span class="tag-badge">HTML5 / CSS3</span>
+              <span class="tag-badge">WCAG 2.1 AA</span>
+              <span class="tag-badge">Écoconception</span>
+              <span class="tag-badge">Figma</span>
+            </div>
+            <div class="project-actions">
+              <a href="index.html" class="btn btn-primary btn-sm">Voir le projet &nearr;</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="proj-digital" class="project-card" data-category="digital">
+          <div class="project-thumb"><img src="assets/images/project-commerce.svg" alt="Logo Digital Telecom &amp; Business" width="400" height="240" loading="lazy"></div>
+          <div class="project-body">
+            <span class="project-category">Projet professionnel &bull; Plateforme web</span>
+            <h2 class="project-title" style="font-size: 1.25rem;">Digital Telecom &amp; Business</h2>
+            <p class="project-summary">Conception d'une présence numérique professionnelle pour présenter les services, les solutions et l'identité de Digital Telecom &amp; Business.</p>
+            <div class="project-tags"><span class="tag-badge">Design web</span><span class="tag-badge">Responsive</span><span class="tag-badge">Identité digitale</span></div>
+            <div class="project-actions"><a href="https://digital-telecom-business.ai.studio" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Voir le projet &nearr;</a></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Bloc d'appel à l'action -->
+      <section style="margin-top: 4rem; text-align: center; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 3rem 1.5rem;" aria-labelledby="cta-title">
+        <h2 id="cta-title" style="font-size: 1.6rem; margin-bottom: 0.8rem;">Vous avez un projet web en tête ?</h2>
+        <p style="max-width: 600px; margin: 0 auto 1.8rem; color: var(--color-text-muted);">
+          Je suis à votre disposition pour concrétiser vos idées d'interfaces web ergonomiques, rapides et accessibles.
+        </p>
+        <a href="index.html#contact" class="btn btn-primary">Prendre contact avec moi</a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>KABORE Mahamady</h3>
+          <p>
+            Développeur Web Junior formé avec le programme D-CLIC. Portfolio sobre, accessible et respectueux des standards GreenIT.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="projects.html">Projets &amp; Réalisations</a></li>
+            <li><a href="index.html#contact">Contact direct</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Engagements Qualité</h4>
+          <ul class="footer-links">
+            <li><span>Accessibilité WCAG AA</span></li>
+            <li><span>Validateur W3C respecté</span></li>
+            <li><span>Empreinte carbone &lt; 50 Ko</span></li>
+            <li><span>Code vanilla optimisé</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> KABORE Mahamady. Tous droits réservés.</p>
+        <span class="footer-eco-badge">
+          <span aria-hidden="true">&#9854;</span> Site web écoconçu &bull; Faible empreinte carbone
+        </span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

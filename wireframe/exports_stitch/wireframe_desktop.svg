@@ -1,0 +1,125 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" style="background:#f1f5f9; font-family:sans-serif;">
+  <!-- Titre Schema -->
+  <text x="600" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#334155">WIREFRAME LOW-FIDELITY DESKTOP (1200px) - PORTFOLIO KABORE MAHAMADY</text>
+  <rect x="50" y="60" width="1100" height="1400" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4" rx="8" />
+
+  <!-- HEADER -->
+  <rect x="50" y="60" width="1100" height="80" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+  <rect x="80" y="82" width="160" height="36" fill="#cbd5e1" rx="4" />
+  <text x="160" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">KM | Mahamady</text>
+  <rect x="520" y="86" width="90" height="28" fill="#e2e8f0" rx="4" />
+  <text x="565" y="105" text-anchor="middle" font-size="12" fill="#475569">Accueil</text>
+  <rect x="625" y="86" width="90" height="28" fill="#e2e8f0" rx="4" />
+  <text x="670" y="105" text-anchor="middle" font-size="12" fill="#475569">À propos</text>
+  <rect x="730" y="86" width="105" height="28" fill="#e2e8f0" rx="4" />
+  <text x="782" y="105" text-anchor="middle" font-size="12" fill="#475569">Compétences</text>
+  <rect x="850" y="86" width="90" height="28" fill="#e2e8f0" rx="4" />
+  <text x="895" y="105" text-anchor="middle" font-size="12" fill="#475569">Projets</text>
+  <rect x="980" y="80" width="140" height="40" fill="#3b82f6" rx="6" />
+  <text x="1050" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Me contacter</text>
+
+  <!-- HERO SECTION -->
+  <rect x="50" y="140" width="1100" height="280" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="80" y="165" width="120" height="22" fill="#dbeafe" rx="4" />
+  <text x="140" y="180" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">HERO SECTION</text>
+  <rect x="80" y="200" width="600" height="44" fill="#334155" rx="4" />
+  <text x="380" y="228" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">[H1] Développeur Web Junior - KABORE Mahamady</text>
+  <rect x="80" y="260" width="580" height="16" fill="#e2e8f0" rx="2" />
+  <rect x="80" y="285" width="500" height="16" fill="#e2e8f0" rx="2" />
+  <rect x="80" y="330" width="160" height="44" fill="#2563eb" rx="6" />
+  <text x="160" y="357" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Voir mes projets</text>
+  <rect x="260" y="330" width="140" height="44" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" rx="6" />
+  <text x="330" y="357" text-anchor="middle" font-size="13" font-weight="bold" fill="#475569">Me contacter</text>
+  <!-- Avatar -->
+  <circle cx="950" cy="275" r="90" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4" />
+  <text x="950" y="280" text-anchor="middle" font-size="14" fill="#64748b" font-weight="bold">PHOTO / AVATAR</text>
+
+  <!-- SECTION A PROPOS -->
+  <rect x="50" y="420" width="1100" height="190" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="80" y="440" width="110" height="22" fill="#e2e8f0" rx="4" />
+  <text x="135" y="455" text-anchor="middle" font-size="11" font-weight="bold" fill="#475569">À PROPOS</text>
+  <rect x="80" y="475" width="280" height="30" fill="#475569" rx="4" />
+  <text x="220" y="495" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">[H2] Présentation &amp; Parcours</text>
+  <rect x="80" y="520" width="1000" height="14" fill="#cbd5e1" rx="2" />
+  <rect x="80" y="545" width="940" height="14" fill="#cbd5e1" rx="2" />
+  <rect x="80" y="570" width="700" height="14" fill="#cbd5e1" rx="2" />
+
+  <!-- SECTION COMPETENCES -->
+  <rect x="50" y="610" width="1100" height="270" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="80" y="630" width="130" height="22" fill="#e2e8f0" rx="4" />
+  <text x="145" y="645" text-anchor="middle" font-size="11" font-weight="bold" fill="#475569">COMPÉTENCES</text>
+  <rect x="80" y="665" width="260" height="30" fill="#475569" rx="4" />
+  <text x="210" y="685" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">[H2] Compétences Techniques</text>
+  <!-- 3 colonnes competences -->
+  <g transform="translate(80, 715)">
+    <rect x="0" y="0" width="315" height="135" fill="#f8fafc" stroke="#cbd5e1" rx="6" />
+    <rect x="15" y="15" width="36" height="36" fill="#dbeafe" rx="4" />
+    <rect x="65" y="25" width="120" height="18" fill="#475569" rx="2" />
+    <rect x="15" y="65" width="285" height="12" fill="#e2e8f0" rx="2" />
+    <rect x="15" y="85" width="240" height="12" fill="#e2e8f0" rx="2" />
+
+    <rect x="360" y="0" width="315" height="135" fill="#f8fafc" stroke="#cbd5e1" rx="6" />
+    <rect x="375" y="15" width="36" height="36" fill="#dbeafe" rx="4" />
+    <rect x="425" y="25" width="140" height="18" fill="#475569" rx="2" />
+    <rect x="375" y="65" width="285" height="12" fill="#e2e8f0" rx="2" />
+    <rect x="375" y="85" width="240" height="12" fill="#e2e8f0" rx="2" />
+
+    <rect x="720" y="0" width="315" height="135" fill="#f8fafc" stroke="#cbd5e1" rx="6" />
+    <rect x="735" y="15" width="36" height="36" fill="#dbeafe" rx="4" />
+    <rect x="785" y="25" width="130" height="18" fill="#475569" rx="2" />
+    <rect x="735" y="65" width="285" height="12" fill="#e2e8f0" rx="2" />
+    <rect x="735" y="85" width="240" height="12" fill="#e2e8f0" rx="2" />
+  </g>
+
+  <!-- SECTION PROJETS -->
+  <rect x="50" y="880" width="1100" height="330" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="80" y="900" width="110" height="22" fill="#e2e8f0" rx="4" />
+  <text x="135" y="915" text-anchor="middle" font-size="11" font-weight="bold" fill="#475569">RÉALISATIONS</text>
+  <rect x="80" y="930" width="260" height="30" fill="#475569" rx="4" />
+  <text x="210" y="950" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">[H2] Projets &amp; Exercices</text>
+  <!-- 3 cartes projets -->
+  <g transform="translate(80, 975)">
+    <rect x="0" y="0" width="320" height="205" fill="#ffffff" stroke="#cbd5e1" rx="6" />
+    <rect x="0" y="0" width="320" height="100" fill="#e2e8f0" rx="6" />
+    <text x="160" y="55" text-anchor="middle" font-size="12" fill="#64748b">[H3] Projet 1 - CSS3</text>
+    <rect x="15" y="115" width="160" height="16" fill="#334155" rx="2" />
+    <rect x="15" y="140" width="290" height="12" fill="#cbd5e1" rx="2" />
+    <rect x="15" y="165" width="55" height="18" fill="#e2e8f0" rx="9" />
+    <rect x="75" y="165" width="55" height="18" fill="#e2e8f0" rx="9" />
+
+    <rect x="360" y="0" width="320" height="205" fill="#ffffff" stroke="#cbd5e1" rx="6" />
+    <rect x="360" y="0" width="320" height="100" fill="#e2e8f0" rx="6" />
+    <text x="520" y="55" text-anchor="middle" font-size="12" fill="#64748b">[H3] Projet 2 - JavaScript</text>
+    <rect x="375" y="115" width="180" height="16" fill="#334155" rx="2" />
+    <rect x="375" y="140" width="290" height="12" fill="#cbd5e1" rx="2" />
+    <rect x="375" y="165" width="55" height="18" fill="#e2e8f0" rx="9" />
+    <rect x="435" y="165" width="55" height="18" fill="#e2e8f0" rx="9" />
+
+    <rect x="720" y="0" width="320" height="205" fill="#ffffff" stroke="#cbd5e1" rx="6" />
+    <rect x="720" y="0" width="320" height="100" fill="#e2e8f0" rx="6" />
+    <text x="880" y="55" text-anchor="middle" font-size="12" fill="#64748b">[H3] Projet 3 - Portfolio</text>
+    <rect x="735" y="115" width="170" height="16" fill="#334155" rx="2" />
+    <rect x="735" y="140" width="290" height="12" fill="#cbd5e1" rx="2" />
+    <rect x="735" y="165" width="55" height="18" fill="#e2e8f0" rx="9" />
+    <rect x="795" y="165" width="55" height="18" fill="#e2e8f0" rx="9" />
+  </g>
+
+  <!-- SECTION CONTACT -->
+  <rect x="50" y="1210" width="1100" height="200" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="80" y="1230" width="100" height="22" fill="#e2e8f0" rx="4" />
+  <text x="130" y="1245" text-anchor="middle" font-size="11" font-weight="bold" fill="#475569">CONTACT</text>
+  <rect x="80" y="1260" width="240" height="30" fill="#475569" rx="4" />
+  <text x="200" y="1280" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">[H2] Formulaire de Contact</text>
+  <!-- Formulaire -->
+  <g transform="translate(480, 1230)">
+    <rect x="0" y="0" width="280" height="32" fill="#f8fafc" stroke="#cbd5e1" rx="4" />
+    <rect x="300" y="0" width="280" height="32" fill="#f8fafc" stroke="#cbd5e1" rx="4" />
+    <rect x="0" y="44" width="580" height="60" fill="#f8fafc" stroke="#cbd5e1" rx="4" />
+    <rect x="0" y="115" width="150" height="38" fill="#2563eb" rx="6" />
+    <text x="75" y="138" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Envoyer</text>
+  </g>
+
+  <!-- FOOTER -->
+  <rect x="50" y="1410" width="1100" height="50" fill="#0f172a" rx="0 0 8 8" />
+  <text x="600" y="1440" text-anchor="middle" font-size="12" fill="#94a3b8">© 2026 KABORE Mahamady • Portfolio sobre, accessible et écoconçu</text>
+</svg>

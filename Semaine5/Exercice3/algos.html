@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 3 - Logique et algorithmes (niveau 1)</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Activité 5 • Exercice 3</span>
+      <h1>Logique et Algorithmes</h1>
+      <p class="subtitle">Formation D-CLIC • Nombres premiers, facteurs, moyenne et motif d'étoiles</p>
+      <nav class="nav-links">
+        <a href="../../site/projects.html" class="portfolio-link">← Portfolio</a>
+        <a href="../Exercice1/index.html">Ex 1</a>
+        <a href="../Exercice2/boucles.html">Ex 2</a>
+        <a href="algos.html" class="active">Ex 3</a>
+        <a href="../Exercice4/dom_basics.html">Ex 4</a>
+        <a href="../Exercice5/exercise1.html">Ex 5</a>
+        <a href="../Exercice6/exercise2.html">Ex 6</a>
+        <a href="../Exercice7/exercise3.html">Ex 7</a>
+        <a href="../Exercice8/calculateur.html">Ex 8</a>
+      </nav>
+    </header>
+
+    <!-- 1. Nombres premiers entre 1 et 100 -->
+    <div class="card-section">
+      <h2>1. Nombres premiers entre 1 et 100</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">
+        Un nombre premier possède exactement 2 diviseurs : 1 et lui-même. (1 n'est pas premier).
+      </p>
+      <button class="btn btn-primary" onclick="afficherNombresPremiers()">Afficher les nombres premiers</button>
+      <div id="resultatPremiers" class="result-box info">Cliquez sur le bouton pour lancer l'algorithme.</div>
+    </div>
+
+    <!-- 2. Facteurs (diviseurs) d'un nombre saisi -->
+    <div class="card-section">
+      <h2>2. Facteurs / Diviseurs d'un nombre</h2>
+      <div class="form-group">
+        <label for="inputFacteurs">Entrez un entier positif :</label>
+        <input type="number" id="inputFacteurs" placeholder="Ex: 36" min="1" step="1">
+      </div>
+      <button class="btn btn-primary" onclick="trouverFacteurs()">Trouver les facteurs</button>
+      <div id="resultatFacteurs" class="result-box info">Le résultat s'affichera ici.</div>
+    </div>
+
+    <!-- 3. Moyenne des nombres positifs jusqu'à un négatif -->
+    <div class="card-section">
+      <h2>3. Moyenne jusqu'à saisie d'un nombre négatif</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">
+        La saisie se poursuit tant que les nombres sont positifs (&ge; 0). Dès qu'un nombre négatif est saisi (&lt; 0), la saisie s'arrête et la moyenne est calculée.
+      </p>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="lancerSaisieMoyennePrompt()">Lancer la saisie interactive (Prompt)</button>
+        <button class="btn btn-outline" onclick="reinitialiserMoyennePage()">Réinitialiser le mode page</button>
+      </div>
+      <div style="margin-top: 15px;">
+        <div class="row">
+          <div class="col">
+            <label for="inputMoyenne">Ajouter une valeur (&ge; 0 pour continuer, &lt; 0 pour terminer) :</label>
+            <input type="number" id="inputMoyenne" placeholder="Ex: 14 ou -1" step="any">
+          </div>
+          <div class="col" style="display:flex; align-items:flex-end;">
+            <button class="btn btn-secondary" onclick="ajouterNombreMoyennePage()">Valider l'entrée</button>
+          </div>
+        </div>
+      </div>
+      <div id="resultatMoyenne" class="result-box info">En attente de saisie...</div>
+    </div>
+
+    <!-- 4. Motif triangulaire d'étoiles -->
+    <div class="card-section">
+      <h2>4. Motif Triangulaire d'Étoiles</h2>
+      <div class="form-group">
+        <label for="inputHauteurTriangle">Hauteur du triangle :</label>
+        <input type="number" id="inputHauteurTriangle" placeholder="Ex: 6" min="1" max="25" value="5">
+      </div>
+      <button class="btn btn-primary" onclick="genererTriangleEtoiles()">Générer le triangle</button>
+      <div id="resultatTriangle" class="result-box info">Le motif d'étoiles s'affichera ici.</div>
+    </div>
+
+    <footer>
+      <a href="../Exercice2/boucles.html">&larr; Exercice 2</a>
+      <span>Auteur : <strong>KABORE Mahamady</strong></span>
+      <a href="../Exercice4/dom_basics.html">Passer à l'Exercice 4 &rarr;</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

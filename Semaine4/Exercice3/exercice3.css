@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    color: #222222;
+}
+.italique {
+    font-style: italic;
+}
+#gras {
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateX(4px);
+}
+.item-highlight {
+    color: blue;
+}
+[class^="a"] {
+    background-color: yellow;
+}
+[class$="date"] {
+    background-color: green;
+    color: white;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+}

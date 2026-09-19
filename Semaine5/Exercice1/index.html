@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 1 - Conditions : âge, pair/impair, mois</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Activité 5 • Exercice 1</span>
+      <h1>Conditions : Âge, Parité et Mois</h1>
+      <p class="subtitle">Formation D-CLIC • JavaScript fondamentaux et interactions utilisateur</p>
+      <nav class="nav-links">
+        <a href="../../site/projects.html" class="portfolio-link">← Portfolio</a>
+        <a href="index.html" class="active">Ex 1</a>
+        <a href="../Exercice2/boucles.html">Ex 2</a>
+        <a href="../Exercice3/algos.html">Ex 3</a>
+        <a href="../Exercice4/dom_basics.html">Ex 4</a>
+        <a href="../Exercice5/exercise1.html">Ex 5</a>
+        <a href="../Exercice6/exercise2.html">Ex 6</a>
+        <a href="../Exercice7/exercise3.html">Ex 7</a>
+        <a href="../Exercice8/calculateur.html">Ex 8</a>
+      </nav>
+    </header>
+
+    <!-- Option de test direct avec prompt / alert (comme dans le cours) -->
+    <div class="card-section">
+      <h2>🚀 Exécution rapide avec Prompt / Alert</h2>
+      <p style="margin-bottom: 12px; font-size: 0.9rem; color: var(--text-muted);">
+        Cliquez sur les boutons pour tester le flux avec <code>prompt()</code> et <code>alert()</code> comme indiqué dans le sujet.
+      </p>
+      <div class="btn-group">
+        <button class="btn btn-outline" onclick="testerAgePrompt()">Tester l'âge (Prompt)</button>
+        <button class="btn btn-outline" onclick="testerParitePrompt()">Tester pair/impair (Prompt)</button>
+        <button class="btn btn-outline" onclick="testerMoisPrompt()">Tester le mois (Prompt)</button>
+      </div>
+    </div>
+
+    <!-- Section 1 : Vérification de l'âge (Bonus affichage dans la page) -->
+    <div class="card-section">
+      <h2>1. Vérification de l'Âge (Mineur ou Majeur)</h2>
+      <div class="form-group">
+        <label for="inputAge">Entrez votre âge :</label>
+        <input type="number" id="inputAge" placeholder="Ex: 22" min="0" step="1">
+      </div>
+      <button class="btn btn-primary" onclick="verifierAge()">Vérifier l'âge</button>
+      <div id="resultatAge" class="result-box info">Le résultat s'affichera ici.</div>
+    </div>
+
+    <!-- Section 2 : Pair ou Impair -->
+    <div class="card-section">
+      <h2>2. Nombre Pair ou Impair</h2>
+      <div class="form-group">
+        <label for="inputNombre">Entrez un nombre entier :</label>
+        <input type="number" id="inputNombre" placeholder="Ex: 42" step="1">
+      </div>
+      <button class="btn btn-primary" onclick="verifierParite()">Vérifier la parité</button>
+      <div id="resultatParite" class="result-box info">Le résultat s'affichera ici.</div>
+    </div>
+
+    <!-- Section 3 : Mois de l'année -->
+    <div class="card-section">
+      <h2>3. Nom du Mois (1 à 12)</h2>
+      <div class="form-group">
+        <label for="inputMois">Entrez le numéro du mois (1 - 12) :</label>
+        <input type="number" id="inputMois" placeholder="Ex: 7" min="1" max="12" step="1">
+      </div>
+      <button class="btn btn-primary" onclick="verifierMois()">Afficher le mois</button>
+      <div id="resultatMois" class="result-box info">Le résultat s'affichera ici.</div>
+    </div>
+
+    <footer>
+      <span>Auteur : <strong>KABORE Mahamady</strong></span>
+      <a href="../Exercice2/boucles.html">Passer à l'Exercice 2 &rarr;</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

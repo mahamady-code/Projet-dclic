@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio professionnel de KABORE Mahamady - Développeur Web Junior. Conception sobre, accessible (WCAG AA) et écoconçue.">
+  <meta name="author" content="KABORE Mahamady">
+  <title>KABORE Mahamady | Développeur Web Junior - Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <!-- Lien d'évitement accessible pour la navigation au clavier -->
+  <a href="#main-content" class="skip-link">Passer au contenu principal</a>
+
+  <!-- En-tête du site -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Accueil - Portfolio KABORE Mahamady">
+        <span class="brand-badge" aria-hidden="true">KM</span>
+        <span>Mahamady KABORE</span> 
+      </a>
+
+      <!-- Bouton Menu Hamburger accessible pour Mobile -->
+      <button id="burger-btn" class="burger-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <!-- Barre de navigation principale -->
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Accueil</a></li>
+          <li><a href="#apropos" class="nav-link">À propos</a></li>
+          <li><a href="#competences" class="nav-link">Compétences</a></li>
+          <li><a href="projects.html" class="nav-link">Projets</a></li>
+          <li><a href="#contact" class="btn btn-primary btn-sm">Me contacter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <main id="main-content">
+    
+    <!-- 1. Hero / Présentation -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-tag">
+            <span aria-hidden="true">●</span> Disponible pour opportunités professionnelles
+          </span>
+          <h1 id="hero-title">Développeur Web Junior &amp; Sécurité Informatique</h1>
+          <p class="hero-location" aria-label="Localisation">📍 Ouagadougou, Burkina Faso</p>
+          <p class="hero-lead">
+            Bonjour, je suis <strong>KABORE Mahamady</strong>. Formé aux technologies modernes du Web au sein du programme <strong>D-CLIC</strong>, je conçois des interfaces numériques performantes, accessibles à tous et respectueuses de l'écoconception numérique.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-secondary">Prendre contact</a>
+            <a href="https://digital-telecom-business.ai.studio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Voir mon travail Digital Telecom &nearr;</a>
+          </div>
+        </div>
+        <div class="hero-avatar-wrapper">
+          <img src="assets/images/mahamady.png" alt="Portrait de KABORE Mahamady, développeur web" class="hero-avatar" width="220" height="220" onerror="this.src='assets/images/avatar.svg'; this.onerror=null;">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Section À propos -->
+    <section id="apropos" class="section-padding section-alt" aria-labelledby="about-title">
+      <div class="container">
+        <span class="section-tag">Parcours &amp; Valeurs</span>
+        <h2 id="about-title">À propos de moi</h2>
+        <p class="section-intro">Allier rigueur technique, ergonomie et sobriété numérique au service de vos projets.</p>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Actuellement en formation <strong>D-CLIC Développement Web</strong>, je maîtrise la chaîne de production d'un projet web : de la conception de wireframes (Stitch) et de prototypes interactifs (Figma), jusqu'au développement front-end complet.
+            </p>
+            <p>
+              Mon approche s'appuie sur des standards élevés de <strong>qualité logicielle</strong> : code HTML sémantique, architecture CSS3 modulaire et responsive sans dépendances lourdes, et dynamisation en JavaScript natif (Vanilla).
+            </p>
+            <p>
+              Éco-sensible et engagé pour l'inclusion, j'intègre nativement les principes d'<strong>écoconception (GreenIT)</strong> et d'<strong>accessibilité (WCAG 2.1 AA)</strong> dès la phase de cadrage.
+            </p>
+            <div style="margin-top: 1.5rem;">
+              <a href="about.html" class="btn btn-secondary">Mon profil, en savoir plus &rarr;</a>
+            </div>
+          </div>
+
+          <aside class="about-highlights" aria-label="Points forts du profil">
+            <ul class="highlights-list">
+              <li class="highlight-item">
+                <div class="highlight-icon" aria-hidden="true">&lt;/&gt;</div>
+                <div class="highlight-info">
+                  <h3>Code Moderne &amp; Sémantique</h3>
+                  <p>Balisage HTML5 propre, structure claire pour le SEO et les lecteurs d'écran.</p>
+                </div>
+              </li>
+              <li class="highlight-item">
+                <div class="highlight-icon" aria-hidden="true">&#9881;</div>
+                <div class="highlight-info">
+                  <h3>Responsive Mobile-First</h3>
+                  <p>Mises en page fluides Flexbox et Grid testées sur smartphone, tablette et écran large.</p>
+                </div>
+              </li>
+              <li class="highlight-item">
+                <div class="highlight-icon" aria-hidden="true">&#127793;</div>
+                <div class="highlight-info">
+                  <h3>Écoconception &amp; Performance</h3>
+                  <p>Zéro dépendance lourde, actifs vectoriels ultra-légers et empreinte carbone minimale.</p>
+                </div>
+              </li>
+              <li class="highlight-item">
+                <div class="highlight-icon" aria-hidden="true">&#9855;</div>
+                <div class="highlight-info">
+                  <h3>Accessibilité</h3>
+                  <p>Contraste contrasté WCAG AA, navigation complète au clavier et attributs ARIA natifs.</p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Section Compétences -->
+    <section id="competences" class="section-padding" aria-labelledby="skills-title">
+      <div class="container">
+        <span class="section-tag">Savoir-faire technique</span>
+        <h2 id="skills-title">Mes Compétences Clés</h2>
+        <p class="section-intro">Mon savoir-faire s'appuie sur des compétences pratiques, validées au travers de réalisations techniques exigeantes.</p>
+
+        <div class="skills-grid">
+          <!-- Carte 1 -->
+          <article class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon" aria-hidden="true">H5</div>
+              <h3>HTML5 Sémantique</h3>
+            </div>
+            <p class="skill-desc">Maîtrise de la structure documentaire sémantique, des balises de repère (landmarks) et de l'accessibilité native.</p>
+            <span class="skill-meta">Structuration &bull; SEO &bull; a11y</span>
+          </article>
+
+          <!-- Carte 2 -->
+          <article class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon" aria-hidden="true">C3</div>
+              <h3>CSS3 &amp; Responsive</h3>
+            </div>
+            <p class="skill-desc">Conception de layouts modernes avec Flexbox et CSS Grid, variables CSS, transitions fluides et breakpoints adaptés.</p>
+            <span class="skill-meta">Flexbox &bull; Grid &bull; Mobile-First</span>
+          </article>
+
+          <!-- Carte 3 -->
+          <article class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon" aria-hidden="true">JS</div>
+              <h3>JavaScript</h3>
+            </div>
+            <p class="skill-desc">Manipulation avancée du DOM, gestion fine des événements, programmation fonctionnelle et validation formulaire robuste.</p>
+            <span class="skill-meta">DOM &bull; Événements &bull; Regex</span>
+          </article>
+
+          <!-- Carte 4 -->
+          <article class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon" aria-hidden="true">&#9855;</div>
+              <h3>Accessibilité Numérique</h3>
+            </div>
+            <p class="skill-desc">Respect des normes WCAG 2.1 AA : navigation au clavier, focus visible, contraste chromatique et rôles ARIA adaptés.</p>
+            <span class="skill-meta">WCAG AA &bull; Focus &bull; ARIA</span>
+          </article>
+
+          <!-- Carte 5 -->
+          <article class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon" aria-hidden="true">&#9879;</div>
+              <h3>Écoconception Web</h3>
+            </div>
+            <p class="skill-desc">Optimisation du poids des pages (&lt; 50 Ko), réduction drastique des requêtes HTTP et utilisation d'actifs SVG optimisés.</p>
+            <span class="skill-meta">GreenIT &bull; Poids plume &bull; Frugalité</span>
+          </article>
+
+          <!-- Carte 6 -->
+          <article class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon" aria-hidden="true">&#128736;</div>
+              <h3>Conception &amp; Outils</h3>
+            </div>
+            <p class="skill-desc">Wireframing basse fidélité avec Stitch, prototypage interactif sous Figma, gestion de version Git et GitHub.</p>
+            <span class="skill-meta">Stitch &bull; Figma &bull; Git</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Section Projets (Aperçu) -->
+    <section id="projets" class="section-padding section-alt" aria-labelledby="projects-title">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+          <div>
+            <span class="section-tag">Portfolio &bull; Réalisations</span>
+            <h2 id="projects-title">Projets Récents</h2>
+            <p class="section-intro" style="margin-bottom: 0;">Un aperçu de mes travaux récents réalisés durant le cursus D-CLIC Développement Web.</p>
+          </div>
+          <a href="projects.html" class="btn btn-secondary">Voir tous les projets &rarr;</a>
+        </div>
+
+        <!-- Filtres interactifs JavaScript -->
+        <div class="projects-filters" role="group" aria-label="Filtrer les projets par catégorie">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">Tous les projets (4)</button>
+          <button type="button" class="filter-btn" data-filter="css" aria-pressed="false">CSS3 &amp; Mise en page</button>
+          <button type="button" class="filter-btn" data-filter="js" aria-pressed="false">JavaScript &amp; Algorithmes</button>
+          <button type="button" class="filter-btn" data-filter="portfolio" aria-pressed="false">Portfolio &amp; Écoconception</button>
+          <button type="button" class="filter-btn" data-filter="digital" aria-pressed="false">Digital Telecom &amp; Business</button>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Projet 1 : Activité 4 CSS3 -->
+                    <article class="project-card" data-category="css">
+            <div class="project-thumb">
+              <img src="assets/images/project-css3.svg" alt="Aperçu du projet Activité 4 CSS3 et Sélecteurs" width="400" height="240" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-category">CSS3 &bull; Intégration</span>
+              <h3 class="project-title">Activité 4 : CSS3 &amp; Sélecteurs Avancés</h3>
+              <p class="project-summary">
+                Maîtrise du modèle de boîte (Box Model), des sélecteurs d'attributs de début (^=) et de fin ($=), et mise en forme responsive mobile.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">CSS3</span>
+                <span class="tag-badge">Sélecteurs</span>
+                <span class="tag-badge">Box Model</span>
+              </div>
+              <div class="project-actions">
+                <a href="../Semaine4/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Voir le projet &nearr;</a>
+                <a href="projects.html#proj-css" class="btn btn-secondary btn-sm">Détails</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 2 : Activité 5 JavaScript -->
+                    <article class="project-card" data-category="js">
+            <div class="project-thumb">
+              <img src="assets/images/project-js.svg" alt="Aperçu de l'Activité 5 JavaScript et DOM" width="400" height="240" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-category">JavaScript &bull; DOM &bull; Algorithmes</span>
+              <h3 class="project-title">Activité 5 : JavaScript Fondamentaux</h3>
+              <p class="project-summary">
+                Suite complète de 8 ateliers : algorithmique (Fibonacci, nombres premiers), objets String, Math et Date, manipulation dynamique du DOM.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">JavaScript</span>
+                <span class="tag-badge">DOM</span>
+                <span class="tag-badge">Algorithmique</span>
+              </div>
+              <div class="project-actions">
+                <a href="../Semaine5/Activite5/KABORE_Mahamady_Activite5_JavaScript/Exercice1/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Voir le projet &nearr;</a>
+                <a href="projects.html#proj-js" class="btn btn-secondary btn-sm">Détails</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 3 : Portfolio Écoconçu -->
+                    <article class="project-card" data-category="portfolio">
+            <div class="project-thumb">
+              <img src="assets/images/project-portfolio.svg" alt="Aperçu du Portfolio Personnel Écoconçu" width="400" height="240" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-category">Projet Final &bull; Semaine 6</span>
+              <h3 class="project-title">Portfolio Personnel Écoconçu</h3>
+              <p class="project-summary">
+                Conception UX/UI complète (Stitch + Figma 6 interactions), intégration sémantique HTML5, CSS3 modulaire et démarche Qualité (WCAG AA).
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">HTML5/CSS3</span>
+                <span class="tag-badge">Vanilla JS</span>
+                <span class="tag-badge">Écoconception</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects.html" class="btn btn-primary btn-sm">Voir le projet &nearr;</a>
+                <a href="projects.html#proj-portfolio" class="btn btn-secondary btn-sm">Détails</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="digital">
+            <div class="project-thumb">
+              <img src="assets/images/project-commerce.svg" alt="Logo Digital Telecom &amp; Business" width="400" height="240" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-category">Projet professionnel &bull; Plateforme web</span>
+              <h3 class="project-title">Digital Telecom &amp; Business</h3>
+              <p class="project-summary">Conception d'une présence numérique professionnelle pour présenter les services, les solutions et l'identité de Digital Telecom &amp; Business.</p>
+              <div class="project-tags"><span class="tag-badge">Design web</span><span class="tag-badge">Responsive</span><span class="tag-badge">Identité digitale</span></div>
+              <div class="project-actions"><a href="https://digital-telecom-business.ai.studio" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Voir le projet &nearr;</a></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Section Contact & Formulaire -->
+    <section id="contact" class="section-padding" aria-labelledby="contact-title">
+      <div class="container">
+        <span class="section-tag">Échange &amp; Opportunités</span>
+        <h2 id="contact-title">Me Contacter</h2>
+        <p class="section-intro">Une question ? Un projet ? Une opportunité d'alternance ou d'emploi ?Écrivez-moi directement !</p>
+
+        <div class="contact-grid">
+          
+          <!-- Coordonnées directes -->
+          <div class="contact-info">
+            <h3>Discutons de vos besoins</h3>
+            <p>
+              Je suis disponible par e-mail ou sur mes réseaux professionnels. Je m'engage à vous répondre sous 24 heures ouvrées.
+            </p>
+
+            <div class="contact-cards-list">
+              <div class="contact-card-item">
+                <div class="contact-card-icon" aria-hidden="true">&#9993;</div>
+                <div class="contact-card-details">
+                  <h4>Email professionnel</h4>
+                  <a href="mailto:kabore.mahamady.dev@example.com">kabore.dev/projet@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-card-icon" aria-hidden="true">&#128205;</div>
+                <div class="contact-card-details">
+                  <h4>Localisation</h4>
+                  <p>Ouagadougou, Burkina Faso (Télétravail &amp; Présentiel) 24/24</p>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-card-icon" aria-hidden="true">&#128187;</div>
+                <div class="contact-card-details">
+                  <h4>Formation &amp; Profil</h4>
+                  <p>Formation D-CLIC Développeur Web &bull; Promotion 2026</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire de contact avec validation JS -->
+          <div class="contact-form-wrapper">
+            <!-- Toast notification dynamique pour confirmation accessible -->
+            <div id="feedback-toast" class="feedback-toast" role="status" aria-live="polite"></div>
+
+            <form id="contact-form" class="contact-form" novalidate aria-label="Formulaire d'envoi de message à KABORE Mahamady">
+              
+              <!-- Champ Nom -->
+              <div class="form-group">
+                <label for="nom">Nom complet <span class="required-star" aria-hidden="true">*</span></label>
+                <input type="text" id="nom" name="nom" class="form-control" placeholder="Ex: Jeane KABORE" required autocomplete="name" aria-required="true" aria-describedby="nom-error">
+                <span id="nom-error" class="error-message" role="alert"></span>
+              </div>
+
+              <!-- Champ Email -->
+              <div class="form-group">
+                <label for="email">Adresse email <span class="required-star" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Ex: nom@domaine.com" required autocomplete="email" aria-required="true" aria-describedby="email-error">
+                <span id="email-error" class="error-message" role="alert"></span>
+              </div>
+
+              <!-- Champ Sujet -->
+              <div class="form-group">
+                <label for="sujet">Sujet de votre message <span class="required-star" aria-hidden="true">*</span></label>
+                <input type="text" id="sujet" name="sujet" class="form-control" placeholder="Ex: Proposition de mission / Projet" required aria-required="true" aria-describedby="sujet-error">
+                <span id="sujet-error" class="error-message" role="alert"></span>
+              </div>
+
+              <!-- Champ Message -->
+              <div class="form-group">
+                <label for="message">Votre message <span class="required-star" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" class="form-control" placeholder="Décrivez succinctement votre demande..." required aria-required="true" aria-describedby="message-error message-counter"></textarea>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
+                  <span id="message-error" class="error-message" role="alert"></span>
+                  <span id="message-counter" class="char-counter"> 10 caractères min.</span> 
+                </div>
+              </div>
+
+              <button type="submit" id="btn-submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                Envoyer le message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pied de page écoconçu -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>KABORE Mahamady</h3>
+          <p>
+            Développeur Web Junior &amp; Sécurité Informatique.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="projects.html">Projets &amp; Réalisations</a></li>
+            <li><a href="#contact">Contact direct</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Engagements Numériques</h4>
+          <ul class="footer-links">
+            <li><span>Normes WCAG 2.1 AA</span></li>
+            <li><span>Balisage sémantique W3C</span></li>
+            <li><span>Sobriété GreenIT (&lt; 50 Ko)</span></li>
+            <li><span>100% Vanilla JS sans CDN</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> KABORE Mahamady. Tous droits réservés.</p>
+        <span class="footer-eco-badge">
+          <span aria-hidden="true">&#9854;</span> Écoconception (GreenIT) &bull; Empreinte carbone réduite
+        </span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿================================================================================
+PROMPT STITCH V2 - VERSION AFFINEE (ECOCONCEPTION + ACCESSIBILITE + DETAIL DES FLUX)
+Apprenant : KABORE Mahamady
+Formation : D-CLIC - Developpement Web (Semaine 6 - Projet Final)
+================================================================================
+
+Role et Contexte :
+Tu es un architecte d'information et designer UX/UI specialiste de l'ecoconception web (sobriete numerique GreenIT) et de l'accessibilite universelle (WCAG 2.1 AA / RGAA).
+
+Mission :
+Affiner le wireframe v1 du portfolio de KABORE Mahamady pour produire une version v2 optimisee, inclusive, sobre et hautement fonctionnelle.
+
+Exigences detaillees d'Ecoconception et de Sobriete :
+1. Architecture de page frugale :
+   - Minimiser le nombre d'elements DOM inutiles et eviter les conteneurs superflus.
+   - Privilegier des elements vectoriels legers (icones et illustrations SVG) en lieu et place de photographies lourdes.
+   - Suppression des effets visuels couteux en calcul GPU (ombres portees excessives, animations superflues en boucle).
+2. Navigation simplifiee :
+   - Double modalite : support complet du parcours Single Page Application (ancres rapides #apropos, #competences, #projets, #contact) ET de pages dediees (projects.html, about.html).
+
+Exigences detaillees d'Accessibilite (a11y - WCAG AA) :
+1. Hierarchie textuelle stricte :
+   - Un unique niveau <h1> par page.
+   - Enchainement logique sans saut de niveau : <h1> -> <h2> pour les sections -> <h3> pour les cartes/blocs.
+2. Contraste et typographie :
+   - Ratios de contraste textuel stricts superieurs ou egaux a 4.5:1 (fonds neutres #F8FAFC, textes #0F172A et #334155, accents contrastes #1D4ED8).
+   - Taille minimale de texte 16px pour le corps de texte.
+   - Typographie systeme native rapide a charger sans appel a des polices tierces.
+3. Formulaire de contact ultra-accessible :
+   - Balise <label> obligatoire explicitement reliee a chaque champ via l'attribut for/id.
+   - Emplacement reserve pour les messages d'erreur et alertes sous chaque champ avec role="alert" et aria-describedby.
+   - Indication claire des champs obligatoires via texte explicite et aria-required="true".
+4. Navigation Clavier et Focus :
+   - Lien d'evitement ("Passer directement au contenu principal") invisible au repos et visible des la premiere tabulation.
+   - Indicateur visuel de focus visible et accentue (outline 3px bleu fonce avec offset de 2px) sur tous les elements interactifs (liens, boutons, champs de saisie).
+   - Ordre de tabulation logique (tabindex naturel).
+
+Composants affines pour la V2 :
+- Header : Navigation fixe ou sticky sobre avec indicateur de section active et bouton de saut direct au contenu.
+- Hero : Accroche percutante et indicateurs de disponibilite ("Disponible pour opportunites").
+- Competences : 6 cartes thematiques avec pictogrammes SVG sobres et niveaux explicites.
+- Projets : Disposition en grille CSS moderne auto-adaptative (3 colonnes desktop, 2 tablette, 1 mobile) avec badges semantiques.
+- Formulaire : Zones de saisie ergonomiques avec feedback instantane en cas d'erreur ou de succes.
+- Footer : Informations d'empreinte environnementale et liens fonctionnels.
+
+Livrables attendus :
+- Vues d'ensemble completes Desktop (1200px) et Mobile (375px) au format vectoriel et HTML interactif.

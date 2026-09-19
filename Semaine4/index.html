@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activité 4 - CSS3 & Sélecteurs | Sommaire</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-page: #f8fafc;
+            --card-bg: #ffffff;
+            --text-title: #0f172a;
+            --text-body: #334155;
+            --border-color: #e2e8f0;
+            --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+            --shadow-hover: 0 20px 30px -10px rgba(37, 99, 235, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-body);
+            line-height: 1.6;
+            padding: 50px 20px;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .main-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .badge-header {
+            display: inline-block;
+            background: #dbeafe;
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--text-title);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #64748b;
+            font-size: 17px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .exercises-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow-card);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: #93c5fd;
+        }
+
+        .card-num {
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-title);
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 14.5px;
+            color: #64748b;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .tags-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            background: #f1f5f9;
+            color: #475569;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .btn-open {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background: var(--primary);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14.5px;
+            transition: background 0.2s ease;
+        }
+
+        .btn-open:hover {
+            background: var(--primary-hover);
+        }
+
+        .checklist-box {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            box-shadow: var(--shadow-card);
+        }
+
+        .checklist-box h3 {
+            font-size: 19px;
+            color: var(--text-title);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checklist-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+            list-style: none;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14.5px;
+            color: #334155;
+            background: #f8fafc;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .icon-check {
+            color: #16a34a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <header>
+            <span class="badge-header">Activite • KABORE Mahamady</span>
+            <h1>Activité 4 : CSS3 & Sélecteurs</h1>
+            <p>Sommaire interactif des trois exercices de mise en forme et sélecteurs CSS.</p>
+            <p style="margin-top: 8px; font-weight: 600; color: #1e293b;">Apprenant : KABORE Mahamady</p>
+            <p style="margin-top: 16px;"><a href="../site/projects.html" class="btn-open">← Retour aux projets du portfolio</a></p>
+        </header>
+
+        <section class="exercises-grid">
+
+            <div class="card">
+                <div>
+                    <div class="card-num">Exercice 1</div>
+                    <h2>Page d'Évaluation</h2>
+                    <p>Mise en place des bases du CSS : liaison externe, styles en ligne, sélecteurs d'éléments, sélecteurs de classe et d'ID.</p>
+                    <div class="tags-list">
+                        <span class="tag">style en ligne</span>
+                        <span class="tag">.highlight</span>
+                        <span class="tag">.special</span>
+                        <span class="tag">#premier-element</span>
+                    </div>
+                </div>
+                <a href="Exercice1/evaluation.html" class="btn-open">Ouvrir l'Exercice 1 →</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-num">Exercice 2</div>
+                    <h2>Mise en Forme de Conteneurs</h2>
+                    <p>Maîtrise du Box Model, imbrication de balises &lt;section&gt; et &lt;div&gt;, bordures et marges contextuelles.</p>
+                    <div class="tags-list">
+                        <span class="tag">.container</span>
+                        <span class="tag">.box</span>
+                        <span class="tag">.box-highlight</span>
+                        <span class="tag">.list-item</span>
+                    </div>
+                </div>
+                <a href="Exercice2/exercice2.html" class="btn-open">Ouvrir l'Exercice 2 →</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-num">Exercice 3</div>
+                    <h2>Sélecteurs CSS Avancés</h2>
+                    <p>Exploration poussée des sélecteurs d'attributs de début (^=) et de fin ($=), combinés avec ID et classes.</p>
+                    <div class="tags-list">
+                        <span class="tag">#texte-gras</span>
+                        <span class="tag">[class^="a"]</span>
+                        <span class="tag">[class$="date"]</span>
+                        <span class="tag">.item-highlight</span>
+                    </div>
+                </div>
+                <a href="Exercice3/exercice3.html" class="btn-open">Ouvrir l'Exercice 3 →</a>
+            </div>
+
+        </section>
+
+        <div class="checklist-box">
+            <h3>📋 Guide d'auto-correction validé</h3>
+            <ul class="checklist-items">
+                <li class="check-item"><span class="icon-check">✔</span> Fichiers CSS externes correctement liés</li>
+                <li class="check-item"><span class="icon-check">✔</span> Sélecteurs d'attributs [class^=] et [class$=]</li>
+                <li class="check-item"><span class="icon-check">✔</span> Box model maîtrisé & box-sizing: border-box</li>
+                <li class="check-item"><span class="icon-check">✔</span> Typographie soignée & interlignes réguliers</li>
+                <li class="check-item"><span class="icon-check">✔</span> Dossiers et fichiers organisés selon les consignes</li>
+                <li class="check-item"><span class="icon-check">✔</span> Design responsive et transitions interactives</li>
+            </ul>
+        </div> 
+
+    </div>
+
+</body>
+</html>

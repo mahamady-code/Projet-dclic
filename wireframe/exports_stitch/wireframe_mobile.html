@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Low-Fidelity Mobile - Portfolio KABORE Mahamady</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #e5e7eb; color: #1f2937; padding: 20px; }
+        .canvas-header { text-align: center; margin-bottom: 20px; }
+        .canvas-header h1 { font-size: 18px; text-transform: uppercase; color: #374151; }
+        .canvas-header p { font-size: 12px; color: #6b7280; }
+        .mobile-frame { width: 375px; margin: 0 auto; background: #ffffff; border: 3px solid #374151; border-radius: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); overflow: hidden; }
+        .phone-notch { height: 20px; background: #374151; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; width: 140px; margin: 0 auto 10px; }
+        .wf-section { border-bottom: 2px dashed #d1d5db; padding: 20px 18px; }
+        .wf-tag { display: inline-block; background: #e5e7eb; color: #4b5563; font-size: 10px; font-weight: bold; padding: 2px 6px; border-radius: 3px; margin-bottom: 8px; border: 1px solid #d1d5db; }
+        
+        /* Mobile Header */
+        .wf-header { display: flex; justify-content: space-between; align-items: center; background: #f9fafb; padding: 12px 18px; }
+        .wf-logo { width: 110px; height: 30px; background: #d1d5db; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px; border-radius: 3px; }
+        .wf-burger { width: 34px; height: 30px; background: #4b5563; border-radius: 4px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px; padding: 4px; }
+        .wf-burger span { width: 20px; height: 2px; background: #fff; display: block; }
+
+        /* Hero */
+        .wf-hero { text-align: center; }
+        .wf-avatar { width: 110px; height: 110px; background: #e5e7eb; border: 2px dashed #9ca3af; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #6b7280; font-weight: bold; }
+        .wf-h1 { width: 100%; height: 36px; background: #4b5563; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; margin-bottom: 12px; border-radius: 4px; }
+        .wf-text-block { height: 12px; background: #e5e7eb; margin: 0 auto 8px; border-radius: 2px; }
+        .wf-btn-group { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+        .wf-btn-primary { height: 38px; background: #374151; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; border-radius: 4px; }
+        .wf-btn-secondary { height: 38px; border: 1px solid #9ca3af; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; border-radius: 4px; color: #4b5563; }
+
+        /* Titles */
+        .wf-h2 { width: 180px; height: 26px; background: #6b7280; color: #fff; display: flex; align-items: center; padding: 0 10px; font-size: 11px; font-weight: bold; margin-bottom: 14px; border-radius: 3px; }
+
+        /* Cards Mobile (Single Column) */
+        .wf-skill-card { border: 1px solid #d1d5db; padding: 12px; border-radius: 4px; background: #f9fafb; margin-bottom: 10px; }
+        .wf-project-card { border: 1px solid #d1d5db; border-radius: 6px; overflow: hidden; margin-bottom: 15px; }
+        .wf-project-thumb { height: 110px; background: #e5e7eb; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #6b7280; }
+        .wf-project-body { padding: 12px; }
+
+        /* Form */
+        .wf-form-field { margin-bottom: 10px; }
+        .wf-label { width: 80px; height: 12px; background: #9ca3af; margin-bottom: 4px; border-radius: 2px; }
+        .wf-input { width: 100%; height: 34px; background: #f9fafb; border: 1px solid #d1d5db; border-radius: 4px; }
+
+        /* Footer */ 
+        .wf-footer { background: #f3f4f6; text-align: center; padding: 18px; }
+        .wf-footer-line { width: 200px; height: 12px; background: #d1d5db; margin: 0 auto; border-radius: 2px; }
+    </style>
+</head>
+<body>
+    <div class="canvas-header">
+        <h1>Wireframe Low-Fidelity (Mobile 375px)</h1>
+        <p>Projet Final Portfolio - KABORE Mahamady | Conception initiale Stitch</p>
+    </div>
+
+    <div class="mobile-frame">
+        <div class="phone-notch"></div>
+
+        <!-- Header -->
+        <header class="wf-header">
+            <div class="wf-logo">KM | Mahamady</div>
+            <div class="wf-burger">
+                <span></span><span></span><span></span>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="wf-section wf-hero">
+            <span class="wf-tag">HERO</span>
+            <div class="wf-avatar">AVATAR</div>
+            <div class="wf-h1">[H1] Développeur Web Junior</div>
+            <div class="wf-text-block" style="width:90%;"></div>
+            <div class="wf-text-block" style="width:75%;"></div>
+            <div class="wf-btn-group">
+                <div class="wf-btn-primary">Voir mes projets</div>
+                <div class="wf-btn-secondary">Me contacter</div>
+            </div>
+        </section>
+
+        <!-- À propos -->
+        <section class="wf-section">
+            <span class="wf-tag">À PROPOS</span>
+            <div class="wf-h2">[H2] Présentation</div>
+            <div class="wf-text-block" style="width:100%;"></div>
+            <div class="wf-text-block" style="width:95%;"></div>
+            <div class="wf-text-block" style="width:70%;"></div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="wf-section">
+            <span class="wf-tag">COMPÉTENCES</span>
+            <div class="wf-h2">[H2] Compétences</div>
+            <div class="wf-skill-card"><div class="wf-text-block" style="width:60%; height:14px; background:#6b7280; margin:0 0 6px 0;"></div><div class="wf-text-block" style="width:90%; margin:0;"></div></div>
+            <div class="wf-skill-card"><div class="wf-text-block" style="width:60%; height:14px; background:#6b7280; margin:0 0 6px 0;"></div><div class="wf-text-block" style="width:90%; margin:0;"></div></div>
+            <div class="wf-skill-card"><div class="wf-text-block" style="width:60%; height:14px; background:#6b7280; margin:0 0 6px 0;"></div><div class="wf-text-block" style="width:90%; margin:0;"></div></div>
+        </section>
+
+        <!-- Projets -->
+        <section class="wf-section">
+            <span class="wf-tag">PROJETS</span>
+            <div class="wf-h2">[H2] Réalisations</div>
+            <div class="wf-project-card">
+                <div class="wf-project-thumb">PROJET 1 (CSS3)</div>
+                <div class="wf-project-body">
+                    <div class="wf-text-block" style="width:70%; height:14px; background:#4b5563; margin:0 0 6px 0;"></div>
+                    <div class="wf-text-block" style="width:95%; margin:0;"></div>
+                </div>
+            </div>
+            <div class="wf-project-card">
+                <div class="wf-project-thumb">PROJET 2 (JS)</div>
+                <div class="wf-project-body">
+                    <div class="wf-text-block" style="width:70%; height:14px; background:#4b5563; margin:0 0 6px 0;"></div>
+                    <div class="wf-text-block" style="width:95%; margin:0;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="wf-section">
+            <span class="wf-tag">CONTACT</span>
+            <div class="wf-h2">[H2] Me contacter</div>
+            <div class="wf-form-field"><div class="wf-label"></div><div class="wf-input"></div></div>
+            <div class="wf-form-field"><div class="wf-label"></div><div class="wf-input"></div></div>
+            <div class="wf-form-field"><div class="wf-label"></div><div class="wf-input" style="height:60px;"></div></div>
+            <div class="wf-btn-primary" style="margin-top:10px;">Envoyer</div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wf-section wf-footer">
+            <div class="wf-footer-line"></div>
+        </footer>
+    </div>
+</body>
+</html>

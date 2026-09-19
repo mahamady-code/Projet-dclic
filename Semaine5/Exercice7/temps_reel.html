@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 7 - Horloge en Temps Réel</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Activité 5 • Exercice 7 (Partie 2)</span>
+      <h1>Horloge en Temps Réel</h1>
+      <p class="subtitle">Formation D-CLIC • setInterval(), padStart() et date dynamique en français</p>
+      <nav class="nav-links">
+        <a href="../../site/projects.html" class="portfolio-link">← Portfolio</a>
+        <a href="../Exercice1/index.html">Ex 1</a>
+        <a href="../Exercice2/boucles.html">Ex 2</a>
+        <a href="../Exercice3/algos.html">Ex 3</a>
+        <a href="../Exercice4/dom_basics.html">Ex 4</a>
+        <a href="../Exercice5/exercise1.html">Ex 5</a>
+        <a href="../Exercice6/exercise2.html">Ex 6</a>
+        <a href="exercise3.html">Ex 7 - Dates</a>
+        <a href="temps_reel.html" class="active">Ex 7 - Horloge</a>
+        <a href="../Exercice8/calculateur.html">Ex 8</a>
+      </nav>
+    </header>
+
+    <div class="card-section" style="text-align: center;">
+      <h2>Horloge Numérique Dynamique</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">
+        Actualisation automatique chaque seconde grâce à <code>setInterval()</code> et formatage avec <code>padStart(2, "0")</code>.
+      </p>
+
+      <!-- Affichage de la date en français (Bonus) -->
+      <div id="dateDuJour" class="date-banner">Chargement de la date...</div>
+
+      <!-- Cadran de l'horloge numérique -->
+      <div id="horlogeNumerique" class="digital-clock">00:00:00</div>
+
+      <div class="btn-group" style="justify-content: center; margin-top: 25px;">
+        <a href="exercise3.html" class="btn btn-outline">&larr; Retour au calcul d'écart de date</a>
+        <a href="../Exercice8/calculateur.html" class="btn btn-primary">Passer au Mini-Projet (Exercice 8) &rarr;</a>
+      </div>
+    </div>
+
+    <footer>
+      <a href="exercise3.html">&larr; Exercice 7 - Dates</a>
+      <span>Auteur : <strong>KABORE Mahamady</strong></span>
+      <a href="../Exercice8/calculateur.html">Mini-Projet (Calculateur) &rarr;</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

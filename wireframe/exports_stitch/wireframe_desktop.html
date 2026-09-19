@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Low-Fidelity Desktop - Portfolio KABORE Mahamady</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #e5e7eb; color: #1f2937; padding: 30px; }
+        .canvas-header { text-align: center; margin-bottom: 25px; }
+        .canvas-header h1 { font-size: 20px; text-transform: uppercase; letter-spacing: 1px; color: #374151; }
+        .canvas-header p { font-size: 13px; color: #6b7280; }
+        .wireframe-container { max-width: 1200px; margin: 0 auto; background: #ffffff; border: 2px dashed #9ca3af; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .wf-section { border-bottom: 2px dashed #d1d5db; padding: 30px 40px; position: relative; }
+        .wf-tag { display: inline-block; background: #e5e7eb; color: #4b5563; font-size: 11px; font-weight: bold; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; margin-bottom: 12px; border: 1px solid #d1d5db; }
+        
+        /* Header */
+        .wf-header { display: flex; justify-content: space-between; align-items: center; background: #f9fafb; }
+        .wf-logo { width: 140px; height: 36px; background: #d1d5db; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; }
+        .wf-nav { display: flex; gap: 20px; }
+        .wf-nav-item { width: 90px; height: 28px; background: #e5e7eb; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #4b5563; }
+        .wf-cta-btn { width: 120px; height: 36px; background: #9ca3af; color: #fff; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 12px; border-radius: 4px; }
+        
+        /* Hero */
+        .wf-hero { display: flex; align-items: center; justify-content: space-between; gap: 40px; min-height: 280px; }
+        .wf-hero-left { flex: 1; }
+        .wf-h1 { width: 90%; height: 44px; background: #4b5563; color: #fff; display: flex; align-items: center; padding: 0 15px; font-size: 15px; font-weight: bold; margin-bottom: 15px; border-radius: 4px; }
+        .wf-text-block { width: 85%; height: 16px; background: #e5e7eb; margin-bottom: 10px; border-radius: 2px; }
+        .wf-btn-group { display: flex; gap: 15px; margin-top: 25px; }
+        .wf-btn-primary { width: 150px; height: 42px; background: #374151; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: bold; border-radius: 4px; }
+        .wf-btn-secondary { width: 130px; height: 42px; border: 2px solid #9ca3af; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: bold; border-radius: 4px; color: #4b5563; }
+        .wf-avatar { width: 220px; height: 220px; background: #e5e7eb; border: 2px dashed #9ca3af; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #6b7280; font-weight: bold; text-align: center; }
+
+        /* Titles */
+        .wf-h2 { width: 250px; height: 32px; background: #6b7280; color: #fff; display: flex; align-items: center; padding: 0 12px; font-size: 13px; font-weight: bold; margin-bottom: 20px; border-radius: 3px; }
+
+        /* Competences Grid */
+        .wf-skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .wf-skill-card { border: 1px solid #d1d5db; padding: 18px; border-radius: 6px; background: #f9fafb; }
+        .wf-icon-box { width: 36px; height: 36px; background: #d1d5db; margin-bottom: 10px; border-radius: 4px; }
+        .wf-skill-title { width: 70%; height: 18px; background: #9ca3af; margin-bottom: 8px; border-radius: 2px; }
+
+        /* Projets Grid */
+        .wf-projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+        .wf-project-card { border: 1px solid #d1d5db; border-radius: 6px; overflow: hidden; background: #fafafa; }
+        .wf-project-thumb { height: 140px; background: #e5e7eb; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #6b7280; border-bottom: 1px dashed #d1d5db; }
+        .wf-project-body { padding: 15px; }
+        .wf-project-title { width: 70%; height: 20px; background: #4b5563; margin-bottom: 10px; border-radius: 2px; }
+        .wf-tags { display: flex; gap: 6px; margin: 12px 0; }
+        .wf-tag-pill { width: 50px; height: 16px; background: #e5e7eb; border-radius: 10px; }
+
+        /* Contact Form */
+        .wf-contact-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; }
+        .wf-form-field { margin-bottom: 15px; }
+        .wf-label { width: 100px; height: 14px; background: #9ca3af; margin-bottom: 6px; border-radius: 2px; }
+        .wf-input { width: 100%; height: 38px; background: #f9fafb; border: 1px solid #d1d5db; border-radius: 4px; }
+        .wf-textarea { width: 100%; height: 90px; background: #f9fafb; border: 1px solid #d1d5db; border-radius: 4px; }
+
+        /* Footer */
+        .wf-footer { background: #f3f4f6; text-align: center; padding: 25px; }
+        .wf-footer-line { width: 300px; height: 16px; background: #d1d5db; margin: 0 auto; border-radius: 2px; }
+    </style>
+</head>
+<body>
+    <div class="canvas-header">
+        <h1>Wireframe Low-Fidelity (Desktop 1200px)</h1>
+        <p>Projet Final Portfolio - KABORE Mahamady | Conception initiale Stitch</p>
+    </div>
+
+    <div class="wireframe-container">
+        <!-- Header -->
+        <header class="wf-section wf-header">
+            <div class="wf-logo">LOGO / KM</div>
+            <nav class="wf-nav">
+                <div class="wf-nav-item">Accueil</div>
+                <div class="wf-nav-item">À propos</div>
+                <div class="wf-nav-item">Compétences</div>
+                <div class="wf-nav-item">Projets</div>
+                <div class="wf-nav-item">Contact</div>
+            </nav>
+            <div class="wf-cta-btn">CTA Contact</div>
+        </header>
+
+        <!-- Hero -->
+        <section class="wf-section wf-hero">
+            <div class="wf-hero-left">
+                <span class="wf-tag">SECTION HERO</span>
+                <div class="wf-h1">[H1] Développeur Web Junior - KABORE Mahamady</div>
+                <div class="wf-text-block" style="width:95%;"></div>
+                <div class="wf-text-block" style="width:80%;"></div>
+                <div class="wf-btn-group">
+                    <div class="wf-btn-primary">CTA Projets</div>
+                    <div class="wf-btn-secondary">CTA Contact</div>
+                </div>
+            </div>
+            <div class="wf-avatar">
+                PHOTO / AVATAR
+            </div>
+        </section>
+
+        <!-- À propos -->
+        <section class="wf-section">
+            <span class="wf-tag">SECTION À PROPOS</span>
+            <div class="wf-h2">[H2] Présentation & Parcours</div>
+            <div class="wf-text-block" style="width: 100%;"></div>
+            <div class="wf-text-block" style="width: 95%;"></div>
+            <div class="wf-text-block" style="width: 75%;"></div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="wf-section">
+            <span class="wf-tag">SECTION COMPÉTENCES</span>
+            <div class="wf-h2">[H2] Compétences Techniques</div>
+            <div class="wf-skills-grid">
+                <div class="wf-skill-card"><div class="wf-icon-box"></div><div class="wf-skill-title"></div><div class="wf-text-block"></div></div>
+                <div class="wf-skill-card"><div class="wf-icon-box"></div><div class="wf-skill-title"></div><div class="wf-text-block"></div></div>
+                <div class="wf-skill-card"><div class="wf-icon-box"></div><div class="wf-skill-title"></div><div class="wf-text-block"></div></div>
+                <div class="wf-skill-card"><div class="wf-icon-box"></div><div class="wf-skill-title"></div><div class="wf-text-block"></div></div>
+                <div class="wf-skill-card"><div class="wf-icon-box"></div><div class="wf-skill-title"></div><div class="wf-text-block"></div></div>
+                <div class="wf-skill-card"><div class="wf-icon-box"></div><div class="wf-skill-title"></div><div class="wf-text-block"></div></div>
+            </div>
+        </section>
+
+        <!-- Projets -->
+        <section class="wf-section">
+            <span class="wf-tag">SECTION PROJETS</span>
+            <div class="wf-h2">[H2] Réalisations Récentes</div>
+            <div class="wf-projects-grid">
+                <div class="wf-project-card">
+                    <div class="wf-project-thumb">ILLUSTRATION / CAPTURE 1</div>
+                    <div class="wf-project-body">
+                        <div class="wf-project-title"></div>
+                        <div class="wf-text-block" style="width: 90%;"></div>
+                        <div class="wf-tags"><div class="wf-tag-pill"></div><div class="wf-tag-pill"></div></div>
+                    </div>
+                </div>
+                <div class="wf-project-card">
+                    <div class="wf-project-thumb">ILLUSTRATION / CAPTURE 2</div>
+                    <div class="wf-project-body">
+                        <div class="wf-project-title"></div>
+                        <div class="wf-text-block" style="width: 90%;"></div>
+                        <div class="wf-tags"><div class="wf-tag-pill"></div><div class="wf-tag-pill"></div></div>
+                    </div>
+                </div>
+                <div class="wf-project-card">
+                    <div class="wf-project-thumb">ILLUSTRATION / CAPTURE 3</div>
+                    <div class="wf-project-body">
+                        <div class="wf-project-title"></div>
+                        <div class="wf-text-block" style="width: 90%;"></div>
+                        <div class="wf-tags"><div class="wf-tag-pill"></div><div class="wf-tag-pill"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="wf-section">
+            <span class="wf-tag">SECTION CONTACT</span>
+            <div class="wf-h2">[H2] Me Contacter</div>
+            <div class="wf-contact-layout">
+                <div>
+                    <div class="wf-text-block" style="width: 80%; height: 24px; background: #6b7280; margin-bottom: 15px;"></div>
+                    <div class="wf-text-block" style="width: 95%;"></div>
+                    <div class="wf-text-block" style="width: 90%;"></div>
+                    <div class="wf-text-block" style="width: 60%;"></div>
+                </div>
+                <div>
+                    <div class="wf-form-field"><div class="wf-label"></div><div class="wf-input"></div></div>
+                    <div class="wf-form-field"><div class="wf-label"></div><div class="wf-input"></div></div>
+                    <div class="wf-form-field"><div class="wf-label"></div><div class="wf-textarea"></div></div>
+                    <div class="wf-btn-primary" style="width: 140px;">Bouton Envoyer</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wf-section wf-footer">
+            <div class="wf-footer-line"></div>
+        </footer>
+    </div>
+</body>
+</html>

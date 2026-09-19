@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 6 - Objet Math : racine carrée, arrondi et aléatoire</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Activité 5 • Exercice 6</span>
+      <h1>Objet Math & Méthodes Utilitaires</h1>
+      <p class="subtitle">Formation D-CLIC • Math.sqrt(), Math.round(), Math.random() et fonctions aléatoires</p>
+      <nav class="nav-links">
+        <a href="../../site/projects.html" class="portfolio-link">← Portfolio</a>
+        <a href="../Exercice1/index.html">Ex 1</a>
+        <a href="../Exercice2/boucles.html">Ex 2</a>
+        <a href="../Exercice3/algos.html">Ex 3</a>
+        <a href="../Exercice4/dom_basics.html">Ex 4</a>
+        <a href="../Exercice5/exercise1.html">Ex 5</a>
+        <a href="exercise2.html" class="active">Ex 6</a>
+        <a href="../Exercice7/exercise3.html">Ex 7</a>
+        <a href="../Exercice8/calculateur.html">Ex 8</a>
+      </nav>
+    </header>
+
+    <!-- 1. Racine carrée et arrondi -->
+    <div class="card-section">
+      <h2>1. Calcul de la Racine Carrée et Arrondi</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px;">
+        Calcule la racine carrée exacte via <code>Math.sqrt()</code> et son arrondi à l'entier le plus proche avec <code>Math.round()</code>.
+      </p>
+      <div class="form-group">
+        <label for="inputNombreMath">Entrez un nombre :</label>
+        <input type="number" id="inputNombreMath" placeholder="Ex: 50" step="any">
+      </div>
+      <button class="btn btn-primary" onclick="calculerRacine()">Calculer la racine carrée</button>
+      <div id="resultatRacine" class="result-box info">Saisissez un nombre puis cliquez sur le bouton.</div>
+    </div>
+
+    <!-- 2. Génération Aléatoire 1 à 100 -->
+    <div class="card-section">
+      <h2>2. Nombre Aléatoire 1 à 100 (<code>Aleatoire()</code>)</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px;">
+        Génère un entier aléatoire compris entre 1 et 100 via la formule <code>Math.floor(Math.random() * 100) + 1</code>.
+      </p>
+      <button class="btn btn-primary" onclick="executerAleatoire()">Aléatoire 1–100</button>
+      <div id="resultatAleatoire1" class="result-box info">Cliquez pour générer un nombre.</div>
+    </div>
+
+    <!-- 3. Génération Aléatoire personnalisée Aleatoire2(min, max) -->
+    <div class="card-section">
+      <h2>3. Aléatoire avec Intervalle (<code>Aleatoire2(min, max)</code>)</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px;">
+        Génère un entier aléatoire entre deux bornes paramétrables [Min, Max].
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="inputMin">Valeur minimale (Min) :</label>
+            <input type="number" id="inputMin" value="10" step="1">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="inputMax">Valeur maximale (Max) :</label>
+            <input type="number" id="inputMax" value="50" step="1">
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" onclick="executerAleatoire2()">Générer dans l'intervalle</button>
+      <div id="resultatAleatoire2" class="result-box info">Définissez l'intervalle puis cliquez sur le bouton.</div>
+    </div>
+
+    <footer>
+      <a href="../Exercice5/exercise1.html">&larr; Exercice 5</a>
+      <span>Auteur : <strong>KABORE Mahamady</strong></span>
+      <a href="../Exercice7/exercise3.html">Passer à l'Exercice 7 &rarr;</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

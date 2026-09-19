@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 5 - Objet String : longueur, sous-chaîne et affichage en direct</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Activité 5 • Exercice 5</span>
+      <h1>Objet String & Analyse en Direct</h1>
+      <p class="subtitle">Formation D-CLIC • Événement input, longueur, extraction de sous-chaîne et statistiques</p>
+      <nav class="nav-links">
+        <a href="../../site/projects.html" class="portfolio-link">← Portfolio</a>
+        <a href="../Exercice1/index.html">Ex 1</a>
+        <a href="../Exercice2/boucles.html">Ex 2</a>
+        <a href="../Exercice3/algos.html">Ex 3</a>
+        <a href="../Exercice4/dom_basics.html">Ex 4</a>
+        <a href="exercise1.html" class="active">Ex 5</a>
+        <a href="../Exercice6/exercise2.html">Ex 6</a>
+        <a href="../Exercice7/exercise3.html">Ex 7</a>
+        <a href="../Exercice8/calculateur.html">Ex 8</a>
+      </nav>
+    </header>
+
+    <div class="card-section">
+      <h2>Analyseur de Texte en Temps Réel</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">
+        Tapez du texte dans le champ ci-dessous. Les informations s'actualisent automatiquement à chaque frappe grâce à l'événement <code>input</code>.
+      </p>
+
+      <div class="form-group">
+        <label for="champTexte">Saisissez votre texte :</label>
+        <textarea id="champTexte" rows="4" placeholder="Ex: Bonjour tout le monde !"></textarea>
+      </div>
+
+      <!-- Grille de statistiques dynamiques -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div id="statLongueur" class="stat-value">0</div>
+          <div class="stat-label">Longueur (caractères)</div>
+        </div>
+        <div class="stat-card">
+          <div id="statMots" class="stat-value">0</div>
+          <div class="stat-label">Nombre de mots</div>
+        </div>
+      </div>
+
+      <div class="result-box info" style="margin-top: 20px;">
+        <p><strong>3 premiers caractères (<code>slice(0, 3)</code>) :</strong> <span id="statSousChaine" style="font-family: monospace; font-size: 1.1rem; color: #2563eb;">(aucun)</span></p>
+        <p style="margin-top: 10px;"><strong>Texte en MAJUSCULES (Bonus) :</strong></p>
+        <div id="statMajuscules" class="pre-box" style="margin-top: 6px; min-height: 40px;">(vide)</div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="../Exercice4/dom_basics.html">&larr; Exercice 4</a>
+      <span>Auteur : <strong>KABORE Mahamady</strong></span>
+      <a href="../Exercice6/exercise2.html">Passer à l'Exercice 6 &rarr;</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

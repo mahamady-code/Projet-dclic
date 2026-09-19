@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 8 - Mini-projet : Calculateur de prêt</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Activité 5 • Exercice 8 (Mini-Projet)</span>
+      <h1>Simulateur / Calculateur de Prêt</h1>
+      <p class="subtitle">Formation D-CLIC • Mensualité financière, coût total du crédit et intérêts d'emprunt</p>
+      <nav class="nav-links">
+        <a href="../../site/projects.html" class="portfolio-link">← Portfolio</a>
+        <a href="../Exercice1/index.html">Ex 1</a>
+        <a href="../Exercice2/boucles.html">Ex 2</a>
+        <a href="../Exercice3/algos.html">Ex 3</a>
+        <a href="../Exercice4/dom_basics.html">Ex 4</a>
+        <a href="../Exercice5/exercise1.html">Ex 5</a>
+        <a href="../Exercice6/exercise2.html">Ex 6</a>
+        <a href="../Exercice7/exercise3.html">Ex 7</a>
+        <a href="calculateur.html" class="active">Ex 8</a>
+      </nav>
+    </header>
+
+    <div class="card-section">
+      <h2>Paramètres de l'Emprunt</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">
+        Renseignez les données de votre crédit pour obtenir l'échéance mensuelle détaillée.
+      </p>
+
+      <form id="formPret" onsubmit="return false;">
+        <div class="form-group">
+          <label for="montantPret">Montant du prêt (€ / FCFA) :</label>
+          <input type="number" id="montantPret" placeholder="Ex: 200000" min="1" step="any" required>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="tauxAnnuel">Taux d'intérêt annuel (%) :</label>
+              <input type="number" id="tauxAnnuel" placeholder="Ex: 4.5" min="0" step="0.01" required>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="dureeAnnees">Durée du remboursement (en années) :</label>
+              <input type="number" id="dureeAnnees" placeholder="Ex: 15" min="1" max="50" step="1" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary" onclick="calculerPret()">Calculer les mensualités</button>
+          <button type="button" class="btn btn-outline" onclick="reinitialiserPret()">Réinitialiser</button>
+        </div>
+      </form>
+
+      <!-- Zone de résultat / messages d'erreurs -->
+      <div id="resultatPret" class="result-box info">
+        Veuillez remplir les informations du prêt puis cliquer sur "Calculer".
+      </div>
+
+      <!-- Bloc récapitulatif détaillé (Bonus) -->
+      <div id="blocRecapitulatif" style="display: none; margin-top: 20px;">
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div id="recapMensualite" class="stat-value">0.00</div>
+            <div class="stat-label">Paiement mensuel</div>
+          </div>
+          <div class="stat-card">
+            <div id="recapInterets" class="stat-value" style="color: #ea580c;">0.00</div>
+            <div class="stat-label">Total des intérêts</div>
+          </div>
+          <div class="stat-card">
+            <div id="recapTotal" class="stat-value" style="color: #16a34a;">0.00</div>
+            <div class="stat-label">Coût total remboursé</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="../Exercice7/temps_reel.html">&larr; Exercice 7</a>
+      <span>Auteur : <strong>KABORE Mahamady</strong></span>
+      <a href="../Exercice1/index.html">Retour à l'Exercice 1 &rarr;</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

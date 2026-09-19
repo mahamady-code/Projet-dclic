@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 2 - Boucles : for, while et do...while</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Activité 5 • Exercice 2</span>
+      <h1>Structures Répétitives (Boucles)</h1>
+      <p class="subtitle">Formation D-CLIC • Boucles for, while, do...while et Fibonacci</p>
+      <nav class="nav-links">
+        <a href="../../site/projects.html" class="portfolio-link">← Portfolio</a>
+        <a href="../Exercice1/index.html">Ex 1</a>
+        <a href="boucles.html" class="active">Ex 2</a>
+        <a href="../Exercice3/algos.html">Ex 3</a>
+        <a href="../Exercice4/dom_basics.html">Ex 4</a>
+        <a href="../Exercice5/exercise1.html">Ex 5</a>
+        <a href="../Exercice6/exercise2.html">Ex 6</a>
+        <a href="../Exercice7/exercise3.html">Ex 7</a>
+        <a href="../Exercice8/calculateur.html">Ex 8</a>
+      </nav>
+    </header>
+
+    <!-- 1. Boucle for : 1 à 10 -->
+    <div class="card-section">
+      <h2>1. Nombres de 1 à 10 (Boucle <code>for</code>)</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">
+        Génération et affichage des entiers consécutifs de 1 à 10.
+      </p>
+      <button class="btn btn-primary" onclick="afficherNombresFor()">Afficher de 1 à 10</button>
+      <div id="resultatFor" class="result-box info">Cliquez sur le bouton pour afficher la séquence.</div>
+    </div>
+
+    <!-- 2. Boucle while : Somme 1 à 100 -->
+    <div class="card-section">
+      <h2>2. Somme des entiers de 1 à 100 (Boucle <code>while</code>)</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">
+        Calcul cumulatif : 1 + 2 + 3 + ... + 100.
+      </p>
+      <button class="btn btn-primary" onclick="calculerSommeWhile()">Calculer la somme</button>
+      <div id="resultatWhile" class="result-box info">Cliquez pour calculer le résultat.</div>
+    </div>
+
+    <!-- 3. Boucle do...while : Mini-jeu Nombre Secret -->
+    <div class="card-section">
+      <h2>3. Mini-jeu du Nombre Secret (Boucle <code>do...while</code>)</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">
+        Un nombre aléatoire entre 1 et 100 est généré. Devinez-le avec les indications "Trop grand" / "Trop petit" !
+      </p>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="lancerJeuSecretPrompt()">Jouer en mode interactif (Prompt / do...while)</button>
+        <button class="btn btn-outline" onclick="initialiserJeuEnPage()">Nouveau nombre (mode sur la page)</button>
+      </div>
+      <div style="margin-top: 15px;">
+        <div class="row">
+          <div class="col">
+            <label for="saisieDevinette">Votre proposition (1-100) :</label>
+            <input type="number" id="saisieDevinette" placeholder="Ex: 50" min="1" max="100">
+          </div>
+          <div class="col" style="display: flex; align-items: flex-end;">
+            <button class="btn btn-secondary" onclick="verifierPropositionEnPage()">Tester la proposition</button>
+          </div>
+        </div>
+      </div>
+      <div id="resultatSecret" class="result-box info">Prêt à jouer ! Proposez un nombre ou lancez le mode prompt.</div>
+    </div>
+
+    <!-- 4. Suite de Fibonacci -->
+    <div class="card-section">
+      <h2>4. Suite de Fibonacci (N premiers termes)</h2>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">
+        Chaque terme est la somme des deux précédents : 0, 1, 1, 2, 3, 5, 8, 13, 21...
+      </p>
+      <div class="form-group">
+        <label for="inputFibonacci">Nombre de termes (N) :</label>
+        <input type="number" id="inputFibonacci" placeholder="Ex: 10" min="1" max="50" value="10">
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="genererFibonacci()">Générer les termes</button>
+        <button class="btn btn-outline" onclick="testerFibonacciPrompt()">Saisir via prompt()</button>
+      </div>
+      <div id="resultatFibonacci" class="result-box info">Le résultat s'affichera ici.</div>
+    </div>
+
+    <footer>
+      <a href="../Exercice1/index.html">&larr; Exercice 1</a>
+      <span>Auteur : <strong>KABORE Mahamady</strong></span>
+      <a href="../Exercice3/algos.html">Passer à l'Exercice 3 &rarr;</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
