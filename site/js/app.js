@@ -324,8 +324,14 @@ function initContactForm() {
     submitBtn.disabled = true;
     submitBtn.textContent = 'Envoi en cours...';
 
-    // Simulation d'envoi réseau sobre (600ms)
-    setTimeout(() => {
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    })
+      .then(response => {
+        if (!response.ok) throw new Error('Form submission failed');
+
       submitBtn.disabled = false;
       submitBtn.textContent = originalBtnText;
 
@@ -355,6 +361,15 @@ function initContactForm() {
           toastNotification.style.display = 'none';
         }
       }, 7000);
-    }, 600);
+      })
+      .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+        if (toastNotification) {
+          toastNotification.className = 'feedback-toast toast-error';
+          toastNotification.textContent = 'Impossible d\'envoyer le message pour le moment. Veuillez réessayer.';
+          toastNotification.style.display = 'block';
+        }
+      });
   });
 }
