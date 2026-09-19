@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez KABORE Mahamady, Développeur Web Junior à Ouagadougou.">
+  <meta name="author" content="KABORE Mahamady">
+  <title>Contact | KABORE Mahamady - Développeur Web</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Passer au contenu principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Accueil - Portfolio KABORE Mahamady">
+        <span class="brand-badge" aria-hidden="true">KM</span>
+        <span>Mahamady KABORE</span>
+      </a>
+
+      <button id="burger-btn" class="burger-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="about.html" class="nav-link">À propos</a></li>
+          <li><a href="index.html#competences" class="nav-link">Compétences</a></li>
+          <li><a href="projects.html" class="nav-link">Projets</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Me contacter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section-padding">
+    <div class="container">
+      <span class="section-tag">Échange &amp; Opportunités</span>
+      <h1>Me contacter</h1>
+      <p class="section-intro">Une question, un projet ou une opportunité ? Écrivez-moi directement.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Discutons de vos besoins</h2>
+          <p>Je suis disponible par e-mail ou par téléphone et je m'engage à vous répondre sous 24 heures ouvrées.</p>
+
+          <div class="contact-cards-list">
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">&#9993;</div>
+              <div class="contact-card-details">
+                <h3>Email professionnel</h3>
+                <a href="mailto:mahamadykabore31@gmail.com">mahamadykabore31@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">&#9742;</div>
+              <div class="contact-card-details">
+                <h3>Téléphone personnel</h3>
+                <a href="tel:+22665102459">+226 65 10 24 59</a>
+              </div>
+            </div>
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">&#128205;</div>
+              <div class="contact-card-details">
+                <h3>Localisation</h3>
+                <p>Ouagadougou, Burkina Faso</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <div id="feedback-toast" class="feedback-toast" role="status" aria-live="polite"></div>
+          <form id="contact-form" class="contact-form" action="https://formsubmit.co/mahamadykabore31@gmail.com" method="POST" novalidate aria-label="Formulaire d'envoi de message à KABORE Mahamady">
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio de Mahamady KABORE">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="form-group">
+              <label for="nom">Nom complet <span class="required-star" aria-hidden="true">*</span></label>
+              <input type="text" id="nom" name="nom" class="form-control" placeholder="Ex: Jeane KABORE" required autocomplete="name" aria-required="true" aria-describedby="nom-error">
+              <span id="nom-error" class="error-message" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email <span class="required-star" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Ex: nom@domaine.com" required autocomplete="email" aria-required="true" aria-describedby="email-error">
+              <span id="email-error" class="error-message" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="sujet">Sujet de votre message <span class="required-star" aria-hidden="true">*</span></label>
+              <input type="text" id="sujet" name="sujet" class="form-control" placeholder="Ex: Proposition de mission / Projet" required aria-required="true" aria-describedby="sujet-error">
+              <span id="sujet-error" class="error-message" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message <span class="required-star" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" class="form-control" placeholder="Décrivez succinctement votre demande..." required aria-required="true" aria-describedby="message-error message-counter"></textarea>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
+                <span id="message-error" class="error-message" role="alert"></span>
+                <span id="message-counter" class="char-counter">10 caractères min.</span>
+              </div>
+            </div>
+            <button type="submit" id="btn-submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>KABORE Mahamady</h2>
+          <p>Développeur Web Junior. Interfaces accessibles, performantes et écoconçues.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Engagements</h3>
+          <ul class="footer-links">
+            <li><span>WCAG 2.1 AA</span></li>
+            <li><span>HTML sémantique</span></li>
+            <li><span>Écoconception GreenIT</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> KABORE Mahamady. Tous droits réservés.</p>
+        <span class="footer-eco-badge"><span aria-hidden="true">&#9854;</span> Site web écoconçu</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

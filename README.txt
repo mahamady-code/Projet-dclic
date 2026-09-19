@@ -45,7 +45,7 @@ ProjetFinal_KABORE_Mahamady/
 │   ├── index.html                    (Page principale : Hero, A propos, Competences, Projets, Contact)
 │   ├── projects.html                 (Page dediee aux realisations avec filtrage interactif)
 │   ├── about.html                    (Page dediee au parcours D-CLIC et aux valeurs d'ecoconception)
-│   ├── commerce.html                 (Prototype de site vitrine conservé dans le livrable)
+│   ├── contact.html                  (Page dediee au formulaire et aux coordonnees personnelles)
 │   ├── css/
 │   │   └── style.css                 (Feuille de styles CSS3 unique, responsive et accessible)
 │   ├── js/
